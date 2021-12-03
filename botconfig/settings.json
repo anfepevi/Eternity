@@ -1,0 +1,40 @@
+{
+    "ownerIDS": ["835004741842370570"],
+    "default_cooldown_in_sec" : 1.5,
+    "antiCrash": true,
+    "ping_message": true,
+    "delete_commands": true,
+    "somethingwentwrong_cmd": true,
+
+    "messages": {
+        "ping_message": "Para ver todos los comandos, escriba: `%{prefix}%help`",
+        "cooldown": "❌ Por favor espera %{timeleft}% segundos para volver a usar el comando `%{commandname}%`",
+        "notallowed_to_exec_cmd": {
+            "title": "❌ ¡No estás autorizado a ejecutar este comando!",
+            "description": {
+                "memberpermissions": "Necesitas estos permisos:\n> %{commandmemberpermissions}%",
+                "alloweduserids": "Debes ser uno de los siguientes usuarios:\n> %{commandalloweduserids}%",
+                "requiredroles": "Debe tener uno de los siguientes roles:\n> %{commandrequiredroles}%",
+                "default": "Asegúrese de obtener los permisos necesarios!"
+            }
+        },
+        "somethingwentwrong_cmd": {
+            "title": "❌ Algo salió mal mientras se ejecutaba el: `%{commandname}%` command",
+            "description": "```%{errormessage}%```"
+        },
+        "unknown_cmd": "❌Comando desconocido, intente: **`%{prefix}%help`**",
+        "error_occur": "❌ Ocurrió un error",
+        "error_occur_desc": "````%{errorstack}%````"
+    },
+    "timeout": {
+        "notallowed_to_exec_cmd": {
+            "memberpermissions": 4500,
+            "alloweduserids": 3500,
+            "requiredroles": 3500
+        },
+        "minargs": 5000,
+        "maxargs": 5000,
+        "minplusargs": 5000,
+        "maxplusargs": 5000
+    }
+}
